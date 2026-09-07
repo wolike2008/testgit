@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>弹窗示例</title>
+<style>
+  .modal {
+    display: none; /* 默认隐藏 */
+    position: fixed; /* 固定定位 */
+    z-index: 1; /* 位于顶层 */
+    left: 0;
+    top: 0;
+    width: 100%; /* 全宽 */
+    height: 100%; /* 全高 */
+    overflow: auto; /* 启用滚动 */
+    background-color: rgba(0,0,0,0.4); /* 背景颜色，带有透明度 */
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% 从顶部和自动水平居中 */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* 可根据需要调整宽度 */
+  }
+</style>
+</head>
+<body>
+
+<button onclick="alert('这是一个弹窗！')">点击我</button>
+</div>
+<script>
+var modal = document.getElementById("myModal"); // 获取模态框元素
+var btn = document.getElementById("openModal"); // 获取打开按钮元素
+var span = document.getElementsByClassName("close")[0]; // 获取关闭按钮元素（假设只有一个）
+// 当按钮被点击时，显示模态框并添加点击事件监听器到背景遮罩上以关闭模态框（如果需要的话）
